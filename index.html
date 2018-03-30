@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wibroje todo list</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" defer></script>
+
+
+
+<script src="app.js" defer></script>
+
+</head>
+<body>
+<div class="container">
+  <h1>To Do List</h1>
+
+  
+  <div id="toggle" class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-secondary active">
+      <input type="radio" name="options" id="option1" autocomplete="off" checked> To-do
+    </label>
+    <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Urgent!
+    </label>
+  </div>
+  <br>
+
+    <form id="forminput">
+      <br>
+      <input type="text" id="input" placeholder="Nope">
+      
+
+
+      <button type="button" id="btn" class="btn btn-dark">Add</button>
+      
+
+   
+
+    </form>
+
+      <ul id="todolist">
+      </ul>
+
+
+
+
+
+  <!-- <img src="ac.jpg" id="catphoto"> -->
+</div>
+
+
+
+
+</body>
+</html>
