@@ -2,49 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <title>wibroje todo list</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
+<link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet"> 
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" defer></script>
-
-
 
 <script src="app.js" defer></script>
 
 </head>
 <body>
+
+
 <div class="container">
-  <h1>To Do List</h1>
-  
-  </div>
-  <br>
-
-    <form id="forminput">
+  <h1 class="text bold">To-Do List</h1>
+        <h2 class="text bold">Add an item to the list</h2>
+          <p class="text">To make the item urgent, just click it!<br>To cross an item off, double click!</p>
       <br>
-      <input type="text" id="input" placeholder="Nope">
+      <div id="formbutton">
+        
+          <form id="forminput">
+          <input type="text" id="input" placeholder="Your Item Here" class="text">
+        <br><br>
+          <button type="button" id="btn" class="btn btn-dark">Add</button>
+        <br><br>
+          </form>
+      </div>
       
-
-
-      <button type="button" id="btn" class="btn btn-dark">Add</button>
-      
-    </form>
-
-      <ul id="todolist">
+      <div id="list">
+      <ul id="todolist" class="text">
       </ul>
-
-
-
-
-
-  <!-- <img src="ac.jpg" id="catphoto"> -->
+      </div>
 </div>
-
-
-
-
+      <footer>
+  <h3>About the author</h3>
+</footer>
 </body>
 </html>

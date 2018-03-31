@@ -6,7 +6,7 @@ $('#forminput').submit(function(e){
 //Adding variable for the input value
 		let addList = $('#input').val();
 //Appending list items plus input value to unordered list
-$('ul').append('<li>' + addList + '</li');
+$('ul').append($('<li>-' + addList + '</li>').fadeIn('slow'));
 //Resetting the input to empty so the field clears
 $('#input').val('');
 	});
@@ -21,21 +21,23 @@ $('#btn').click(function(e){
 //I did it easily using vanilla so I can't really figure out why its not working using jEasy
 let addList = $('#input').val();
 
-$('ul').prepend('<li>' + addList + '</li');
+$('ul').append($('<li>-' + addList + '</li>').fadeIn('slow'));
 			
 $('#input').val('');
+	});
+//Urgency feature!
+$(document).on('click','li', function(	){
+	$(this).css('font-weight','bold').css('color', 'red');
 	});
 
 //Adding deletion functionality
 //Using double click method
-$(document).on('dblclick','li', function(){
 //strikethrough 
-        $(this).css('text-decoration', 'line-through');
-      });
 //wait and then fade away and delete
 $(document).on('dblclick','li', function(){
-        $(this).delay(2000).toggleClass('strike').fadeOut('slow');
+        $(this).css('text-decoration', 'line-through').css('color','black').delay(2000).toggleClass('strike').fadeOut('slow');
       });
+
 
 });
 

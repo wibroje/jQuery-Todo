@@ -1,3 +1,92 @@
+body{
+	background-image: url(https://images4.alphacoders.com/888/thumb-1920-8.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
 li:hover{
   cursor: pointer;
- }
+}
+
+li{
+-webkit-touch-callout: none;
+-webkit-user-select: none; 
+-moz-user-select: none;    
+-ms-user-select: none;     
+-o-user-select: none;
+user-select: none;  
+}
+
+.container{
+	width: 1275px;
+	height: 1650px;
+ 	text-align: center;
+ 	background-image: url(http://bgfons.com/uploads/paper_grid/paper_grid_PNG5410.png);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	box-shadow: 15px 20px rgba(0,0,0,.3);
+ 	border-radius:10px;
+}
+
+h1{
+	padding-top:30px;
+ 	color:black;
+ 	font-size: 100px;
+}
+
+#list{
+	justify-content: center;
+	text-align: center;
+	margin: 0 20% 0 20%;
+}
+
+ul{
+	font-size: 60px;
+	list-style-type: none;
+	/*text-align: center;*/
+	padding: 0;
+	padding-top:10px;
+	line-height: 128%;
+}
+
+#btn{
+	width:50%;
+	border-radius: 10px;
+	background: linear-gradient(rgba(92,69,53,.4), rgba(195,180,145,.2));
+	box-shadow: 5px 10px rgba(0,0,0,.3);
+}
+
+#formbutton{
+	margin: 0 15% 0 15%;
+	text-align: center;
+}
+
+#input{
+	text-align: center;
+	width: 75%;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 38px;
+	padding-top:50px;
+}
+
+.text{
+	font-family: 'Coming Soon', cursive;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+footer{
+	color: white;
+}
+
+p{
+	font-size:24px;
+	padding-top:18px;
+}
+
+
+
