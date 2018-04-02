@@ -21,9 +21,8 @@
 </head>
 <body>
 
-
 <div class="container">
-  <h1 class="text bold">To-Do List</h1>
+    <h1 class="text bold">To-Do List</h1>
         <h2 class="text bold">Add an item to the list</h2>
           <p class="text">To make the item urgent, just click it!<br>To cross an item off, double click!</p>
       <br>
@@ -32,7 +31,11 @@
           <form id="forminput">
           <input type="text" id="input" placeholder="Your Item Here" class="text">
         <br><br>
+
+          <audio id="sound1" src="scrib.wav" preload="auto"></audio>
           <button type="button" id="btn" class="btn btn-dark">Add</button>
+
+
         <br><br>
           </form>
       </div>
@@ -42,8 +45,20 @@
       </ul>
       </div>
 </div>
-      <footer>
-  <h3>About the author</h3>
+<br>
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4">
+      <h3>&copy;:foun:2018</h3>
+      </div>
+        <div class="col-lg-4">
+        <a href=""><img id="gitmark" src="GitHub-Mark-32px.png"></a>
+        </div>
+          <div class="col-lg-4">
+            <h3><a href="#">Contact</a> <a href="#">Blog</a> <a href="#">About</h3>
+          </div>
+  <br>
+  </div>
 </footer>
 </body>
 </html>

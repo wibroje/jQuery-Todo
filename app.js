@@ -7,10 +7,10 @@ $('#forminput').submit(function(e){
 		let addList = $('#input').val();
 //Appending list items plus input value to unordered list
 $('ul').append($('<li>-' + addList + '</li>').fadeIn('slow'));
+
 //Resetting the input to empty so the field clears
 $('#input').val('');
 	});
-
 
 //Grabbing the button and using a click function
 $('#btn').click(function(e){
@@ -26,7 +26,7 @@ $('ul').append($('<li>-' + addList + '</li>').fadeIn('slow'));
 $('#input').val('');
 	});
 //Urgency feature!
-$(document).on('click','li', function(	){
+$(document).on('click','li', function(){
 	$(this).css('font-weight','bold').css('color', 'red');
 	});
 
@@ -34,8 +34,8 @@ $(document).on('click','li', function(	){
 //Using double click method
 //strikethrough 
 //wait and then fade away and delete
-$(document).on('dblclick','li', function(){
-        $(this).css('text-decoration', 'line-through').css('color','black').delay(2000).toggleClass('strike').fadeOut('slow');
+$('ul').on('dblclick', 'li', function(){
+    $(this).css('text-decoration', 'line-through').css('color','black').delay(1000).fadeOut('slow');
       });
 
 
